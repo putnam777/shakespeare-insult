@@ -1,3 +1,4 @@
+exports.thou = ['thou']
 exports.verbs = [
   'artless',
   'bawdy',
@@ -158,7 +159,7 @@ exports.nouns = [
 ];
 
 exports.random = function() {
-  return ['verbs', 'adjectives', 'nouns'].map(function(type) {
+  return ['thou', 'verbs', 'adjectives', 'nouns'].map(function(type) {
     return exports[type][Math.floor(Math.random() * exports[type].length)];
   }).join(' ');
 };
